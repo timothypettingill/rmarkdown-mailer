@@ -1,5 +1,5 @@
 # rmarkdown-mailer
-Render and distribute parameterized RMarkdown documents via email.
+Render and distribute parameterized RMarkdown documents via Office365 Outlook.
 
 The `distributeRMarkdown` function in [rmarkdown_mailer.R](./rmarkdown_mailer.R)
 allows you to render and email RMarkdown files in bulk.

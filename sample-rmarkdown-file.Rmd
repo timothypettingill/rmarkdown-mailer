@@ -1,0 +1,30 @@
+---
+title: "sample-report"
+author: "Timothy Pettingill"
+date: "1/17/2020"
+output:
+  html_document:
+    self_contained: true
+params:
+  first_name: Timothy
+  last_name: Pettingill
+  list: nice
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Nice/Naughty List Confirmation
+
+Dear `r params$first_name` `r params$last_name`,
+
+I have been watching you when you are awake and when you are
+sleeping. After carefully evaluating your actions and checking twice
+I am `r ifelse(params$list == "nice", "pleased", "saddened")` to inform you
+that you have been placed on the `r params$list` list.
+
+
+Sincerely,
+
+Santa Claus
